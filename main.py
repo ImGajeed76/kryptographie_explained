@@ -204,8 +204,8 @@ class Hashing:
         hash1 = hashlib.sha256(t1.encode('utf-8')).hexdigest()
         hash2 = hashlib.sha256(t2.encode('utf-8')).hexdigest()
 
-        out1 = ""
-        out2 = ""
+        out1 = t1 + "  ->  "
+        out2 = t2 + "  ->  "
 
         for i in range(len(hash1)):
             if hash1[i] == hash2[i]:
